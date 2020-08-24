@@ -10,7 +10,7 @@ sudo apt-get autoremove android-sdk
 sudo apt-get purge android-sdk
 sudo apt-get autoremove --purge android-sdk
 
-sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk
+sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd
 sudo cp ./environment /etc/environment
 source /etc/environment
 sudo chown -R $USER $ANDROID_HOME 
@@ -19,5 +19,8 @@ scp ben@sautner.me:~/cmdline-tools.zip $ANDROID_HOME/cmdline-tools
 cd $ANDROID_HOME/cmdline-tools
 unzip cmdline-tools.zip
 rm cmdline-tools.zip
+sudo snap install android-studio --classic
+
+
 ssh-keygen -t rsa -b 4096 -C "$USER@sautner.me"
 sudo reboot
