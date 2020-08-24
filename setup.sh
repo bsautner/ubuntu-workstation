@@ -25,5 +25,9 @@ rm cmdline-tools.zip
 sudo snap install android-studio --classic
 
 
+wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1AD28806
+sudo apt-get update
+sudo apt-get install charles-proxy -y
 
 sudo reboot
