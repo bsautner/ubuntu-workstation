@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#ssh-keygen -t rsa -b 4096 -C "$USER@sautner.me"
+
 sudu apt update 
 sudu apt upgrade -y
 sudu apt dist-upgrade -y
@@ -22,5 +25,5 @@ rm cmdline-tools.zip
 sudo snap install android-studio --classic
 
 
-ssh-keygen -t rsa -b 4096 -C "$USER@sautner.me"
+
 sudo reboot
