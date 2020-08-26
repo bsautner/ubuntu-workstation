@@ -24,7 +24,11 @@ cd $ANDROID_HOME/cmdline-tools
 unzip cmdline-tools.zip
 rm cmdline-tools.zip
 sudo snap install android-studio --classic
- 
+
+
+git config --global user.email "$USER@sautner.me"
+git config --global user.name "$USER Sautner"
+
 
 #sudo apt-get remove android-sdk
 #sudo apt-get autoremove android-sdk
