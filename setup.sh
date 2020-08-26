@@ -13,7 +13,7 @@ sudo add-apt-repository ppa:mozillateam/firefox-next
 wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -
 mkdir ~/scripts
 cp ./scripts/* ~/scripts
-chmod +x ~/scripts/*.sh
+chmod +x ~/scripts/*
 
 sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd firefox charles-proxy
 
