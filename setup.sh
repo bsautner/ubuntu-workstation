@@ -10,12 +10,15 @@ sudu apt clean
 
 sudo add-apt-repository ppa:mozillateam/firefox-next
 
+sudo apt purge gnome-software
+ 
+
 wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -
 mkdir ~/scripts
 cp ./scripts/* ~/scripts
 chmod +x ~/scripts/*
 
-sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd firefox charles-proxy
+sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd firefox charles-proxy gnome-software
 
 sudo cp ./environment /etc/environment
 source /etc/environment
