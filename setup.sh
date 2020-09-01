@@ -16,6 +16,8 @@ sudo apt purge gnome-software
 wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -
 mkdir ~/scripts
 cp ./scripts/* ~/scripts
+wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0-beta/openapi-generator-cli-5.0.0-beta.jar -O ~/scripts/openapi-generator-cli.jar
+
 chmod +x ~/scripts/*
 
 sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd firefox charles-proxy gnome-software
