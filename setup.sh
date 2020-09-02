@@ -20,7 +20,7 @@ wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0
 
 chmod +x ~/scripts/*
 
-sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd firefox charles-proxy gnome-software
+sudo apt install -y preload git net-tools openjdk-8-jdk android-sdk snapd firefox charles-proxy gnome-software docker-compose
 
 sudo cp ./environment /etc/environment
 source /etc/environment
