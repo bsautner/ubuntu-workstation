@@ -45,6 +45,8 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
+sudo chgrp docker /usr/bin/docker
+sudo chgrp docker /var/run/docker.sock
 
 #sudo apt-get remove android-sdk
 #sudo apt-get autoremove android-sdk
