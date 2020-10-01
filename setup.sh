@@ -32,6 +32,7 @@ unzip cmdline-tools.zip
 rm cmdline-tools.zip
 sudo snap install android-studio --classic
 sudo snap install htop
+sudo snap install snapcraft --classic
 
 git config --global user.email "$USER@sautner.me"
 git config --global user.name "$USER Sautner"
