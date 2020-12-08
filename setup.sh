@@ -2,11 +2,11 @@
 
 #ssh-keygen -t rsa -b 4096 -C "$USER@sautner.me"
 
-sudu apt update 
-sudu apt upgrade -y
-sudu apt dist-upgrade -y
-sudu apt autoremove -y
-sudu apt clean
+sudo apt update 
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo apt autoremove -y
+sudo apt clean
 
 sudo add-apt-repository ppa:mozillateam/firefox-next
 
